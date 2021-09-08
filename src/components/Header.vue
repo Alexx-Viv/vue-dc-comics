@@ -5,7 +5,11 @@
         <div class="col-2"><img src="../assets/img/dc-logo.png" alt="" /></div>
         <div class="col-8">
           <ul>
-            <li v-for="link in linkList" :key="link">
+            <li
+              v-for="link in linkList"
+              :key="link"
+              :class="{ active: link.current }"
+            >
               <a :href="link.url">{{ link.text }}</a>
             </li>
           </ul>
@@ -87,15 +91,30 @@ header {
   display: flex;
   justify-content: end;
   align-items: center;
+  height: 100%;
 }
 
 ul {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 ul li {
-  margin-right: 20px;
+  padding: 0 10px;
   list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+ul li:hover {
+  background-color: lightgray;
+  border-bottom: 4px solid #0082f9;
+  cursor: pointer;
+}
+
+ul li.active {
+  border-bottom: 4px solid #0082f9;
+  background-color: lightgray;
 }
 
 ul li a {
