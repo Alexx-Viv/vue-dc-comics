@@ -6,7 +6,11 @@
           <li>
             <div class="product">
               <figure>
-                <img src="../assets/img/buy-comics-digital-comics.png" alt="" />
+                <img
+                  src="../assets/img/buy-comics-digital-comics.png"
+                  width="50%"
+                  alt=""
+                />
               </figure>
               <span>digital comics</span>
             </div>
@@ -14,7 +18,11 @@
           <li>
             <div class="product">
               <figure>
-                <img src="../assets/img/buy-comics-merchandise.png" alt="" />
+                <img
+                  src="../assets/img/buy-comics-merchandise.png"
+                  width="50%"
+                  alt=""
+                />
               </figure>
               <span>dc merchandise</span>
             </div>
@@ -22,7 +30,11 @@
           <li>
             <div class="product">
               <figure>
-                <img src="../assets/img/buy-comics-subscriptions.png" alt="" />
+                <img
+                  src="../assets/img/buy-comics-subscriptions.png"
+                  width="50%"
+                  alt=""
+                />
               </figure>
               <span>subscription</span>
             </div>
@@ -30,7 +42,11 @@
           <li>
             <div class="product">
               <figure>
-                <img src="../assets/img/buy-comics-shop-locator.png" alt="" />
+                <img
+                  src="../assets/img/buy-comics-shop-locator.png"
+                  width="50%"
+                  alt=""
+                />
               </figure>
               <span>comic shop locator</span>
             </div>
@@ -38,7 +54,11 @@
           <li>
             <div class="product">
               <figure>
-                <img src="../assets/img/buy-dc-power-visa.svg" alt="" />
+                <img
+                  src="../assets/img/buy-dc-power-visa.svg"
+                  width="50%"
+                  alt=""
+                />
               </figure>
               <span>dc power visa</span>
             </div>
@@ -63,8 +83,8 @@ section {
 }
 span {
   text-transform: uppercase;
+  font-size: 0.8rem;
   color: white;
-  padding-left: 15px;
 }
 ul {
   display: flex;
@@ -80,5 +100,9 @@ ul li {
 .product {
   display: flex;
   align-items: center;
+}
+
+.product figure {
+  flex-basis: 30%;
 }
 </style>

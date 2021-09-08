@@ -57,4 +57,8 @@ figcaption {
   padding: 10px 25px;
   cursor: pointer;
 }
+.button:hover {
+  background-color: white;
+  color: #0082f9;
+}
 </style>
